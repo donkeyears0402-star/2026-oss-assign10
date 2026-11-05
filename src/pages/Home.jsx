@@ -42,13 +42,13 @@ function Home() {
     <>
       <div className="bg-gray-900 text-white min-h-screen flex items-center justify-center">
         <div className="max-w-md w-full p-6 mx-4 md:mx-0 rounded-lg shadow-lg bg-gray-800">
-          <h2 className="text-2xl font-semibold mb-4">Todo App</h2>
-
+          <h2 className="text-2xl font-semibold mb-4">할 일 목록</h2>
           <div className="flex mb-4">
             <input
               type="text"
               className="flex-1 py-2 px-4 mr-2 rounded-md bg-gray-700 focus:outline-none"
               placeholder="Add a new task"
+              value={taskInput}
               onChange={handleTaskInput}
               onKeyDown={handleTaskEnter}
             />
