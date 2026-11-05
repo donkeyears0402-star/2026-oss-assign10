@@ -47,7 +47,7 @@ function Home() {
             <input
               type="text"
               className="flex-1 py-2 px-4 mr-2 rounded-md bg-gray-700 focus:outline-none"
-              placeholder="Add a new task"
+              placeholder="할 일 입력"
               value={taskInput}
               onChange={handleTaskInput}
               onKeyDown={handleTaskEnter}
@@ -56,7 +56,7 @@ function Home() {
               onClick={() => addTask(taskInput)}
               className="py-2 px-4 bg-blue-600 hover:bg-blue-700 rounded-md focus:outline-none focus:shadow-outline-blue"
             >
-              Add
+              추가
             </button>
           </div>
 
