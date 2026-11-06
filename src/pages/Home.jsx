@@ -54,7 +54,7 @@ function Home() {
             />
             <button
               onClick={() => addTask(taskInput)}
-              className="py-2 px-4 bg-blue-600 hover:bg-blue-700 rounded-md focus:outline-none focus:shadow-outline-blue"
+              className="py-2 px-4 bg-teal-500 hover:bg-teal-600 rounded-md focus:outline-none focus:shadow-outline-blue"
             >
               추가
             </button>
