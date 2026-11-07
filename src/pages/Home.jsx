@@ -28,6 +28,7 @@ function Home() {
       return;
     }
     setTasks([...tasks, task]);
+    setTaskInput("");
   }
 
   function removeTask(taskIndex) {
