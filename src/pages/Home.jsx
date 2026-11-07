@@ -6,7 +6,7 @@ import ExportTasks from "../components/ExportTasks";
 function Home() {
   let [taskInput, setTaskInput] = useState("");
   let [tasks, setTasks] = useState(
-    () => JSON.parse(localStorage.getItem("tasks")) || ["aaa", "bbb"],
+    () => JSON.parse(localStorage.getItem("tasks")) || ["오픈소스 과제하기", "운동하기"],
   );
 
   useEffect(() => {
