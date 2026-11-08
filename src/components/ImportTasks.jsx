@@ -12,7 +12,7 @@ function ImportTasks({ setTasks }) {
     reader.onload = (event) => {
       const tasks = JSON.parse(event.target.result);
       if (!Array.isArray(tasks)) {
-        alert("Invalid file format.");
+        alert("파일 형식 오류");
         return;
       }
       localStorage.setItem("tasks", JSON.stringify(tasks));

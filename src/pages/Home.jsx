@@ -63,6 +63,10 @@ function Home() {
             </button>
           </div>
 
+          {tasks.length === 0 && (
+            <p className="text-slate-400 text-sm mb-2">아직 할 일이 없습니다.</p>
+          )}
+
           <ul>
             {tasks.map((task, index) => (
               <Task
@@ -80,7 +84,7 @@ function Home() {
               className="py-2 px-4 bg-red-600 hover:bg-red-700 rounded-md focus:outline-none"
               onClick={removeAllTasks}
             >
-              Remove All
+              전체 삭제
             </button>
           </div>
         </div>

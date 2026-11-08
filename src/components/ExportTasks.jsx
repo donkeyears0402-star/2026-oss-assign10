@@ -6,7 +6,7 @@ function ExportButton({ tasks }) {
 
   function handleExport() {
     if (tasks.length === 0) {
-      alert("No tasks to export.");
+      alert("내보낼 할 일 없음");
       return;
     }
     const data = JSON.stringify(tasks, null, 2);
